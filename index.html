@@ -3,16 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dom-Rev</title>
-  <link rel="stylesheet" href="./styles.css">
+  <title>Forms</title>
 </head>
 <body>
 
-  <button id="btn">Click Me</button>
-<p id="message">Hello!</p>
+  <!-- simple form -->
 
-  
+<input type="text" id="nameInput" placeholder="Enter your name">
+<button id="submitBtn">Submit</button>
+<p id="greeting"></p>
 
-  <script src="./script.js"></script>
+<!-- box to show animation  -->
+
+<button id="moveBtn">Move</button>
+<div id="box"></div>
+<style>
+  #box {
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+  }
+</style>
+
+
+
+
+
+  <script src="./FORMS.js"></script>
 </body>
 </html>
+
+
+<!-- Modifying Multiple Elements at Once -->
+
+<ul id="myList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+<button id="changeColorBtn">Change Colors</button>
+
+<!--  Dynamically Creating & Removing Elements -->
+
+<ul id="taskList"></ul>
+<input type="text" id="taskInput" placeholder="New task">
+<button id="addTaskBtn">Add Task</button>
